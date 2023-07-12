@@ -1,0 +1,104 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+  transform: scale(1);
+  transform-origin: center;
+  transition:  1s ease-in-out;
+}
+.burger .top-bun {
+  height: 100px;
+  border-radius: 900px 900px 10px 10px;
+  background-color: #a27732;
+  border-top: 9px solid #906725;
+}
+.burger .lettuce {
+  border-radius: 8px;
+  background-color: #80d041;
+  height: 8px;
+  border-bottom: 3px solid #0f6d12;
+}
+.burger .tomato {
+  border-radius: 14px;
+  background-color: #f13233;
+  height: 20px;
+  border-bottom: 5px solid #940c0e;
+}
+.burger .onion {
+  border-radius: 8px;
+  background-color: #b95381;
+  height: 13px;
+  border-bottom: 4px solid #7e1846;
+}
+.burger .cheese {
+  background-color: #e8ea02;
+  border-radius: 10px;
+  height: 15px;
+  border-bottom: 5px solid #eab902;
+}
+.burger .beef {
+  border-radius: 15px;
+  background-color: #603102;
+  height: 30px;
+  border-bottom: 16px solid #402408;
+}
+.burger .bottom-bun {
+  background-color: #a27732;
+  border-radius: 10px 10px 50px 50px;
+  height: 60px;
+  border-bottom: 11px solid #724d12;
+}
+.burger:hover {
+  justify-content: space-between;
+  transform: scale(1.25);
+  width: 350px;
+  height: 350px;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+  .burger {
+    width: 100px;
+    height: 100px;
+    transform: scale(1);
+  }
+  .burger .top-bun {
+    height: 35px;
+  }
+  .burger .lettuce {
+    height: 3px;
+  }
+  .burger .tomato {
+    height: 7px;
+  }
+  .burger .onion {
+    height: 4px;
+  }
+  .burger .cheese {
+    height: 5px;
+  }
+  .burger .beef {
+    height: 6px;
+  }
+  .burger .bottom-bun {
+    height: 12px;
+  }
+  .burger:hover {
+    height: 150px;
+    width: 150px;
+    transform: scale(1.25);
+  }
+}
